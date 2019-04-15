@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamApp.Views.VerificationView">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="0">
+
+            <BoxView WidthRequest="70" HeightRequest="30" BackgroundColor="Gray" Margin="0,30,0,40"
+                     HorizontalOptions="Center"/>
+            
+            <BoxView WidthRequest="30" HeightRequest="70" BackgroundColor="Gray"
+                     HorizontalOptions="Center"/>
+
+            <Label Text="کد ارسال شده را اینجا وارد کنید" TextColor="Gray" FontSize="14"
+                   HorizontalTextAlignment="Center" HorizontalOptions="Center" Margin="0,3,0,0" />
+
+            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,25,0,0">
+
+                <Frame CornerRadius="5" BorderColor="Gray" BackgroundColor="White" x:Name="frame1" Padding="0" WidthRequest="80" HeightRequest="50" HasShadow="True">
+                    <Entry Keyboard="Numeric" FontSize="28" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MaxLength="1"   
+                           HorizontalTextAlignment="Center" Focused="VisualElement_OnFocused" Unfocused="VisualElement_OnUnfocused"/>                                                                                  
+                </Frame>
+
+                <Frame CornerRadius="5" BorderColor="Gray" BackgroundColor="White" x:Name="frame2" Padding="0" WidthRequest="80" HeightRequest="50" HasShadow="True">
+                    <Entry Keyboard="Numeric" FontSize="28" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MaxLength="1"     
+                           HorizontalTextAlignment="Center" Focused="VisualElement_OnFocused1" Unfocused="VisualElement_OnUnfocused1" />                                                                                   
+                </Frame>
+
+                <Frame CornerRadius="5" BorderColor="Gray" BackgroundColor="White" x:Name="frame3" Padding="0" WidthRequest="80" HeightRequest="50" HasShadow="True">
+                    <Entry Keyboard="Numeric" FontSize="28" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MaxLength="1"     
+                           HorizontalTextAlignment="Center" Focused="VisualElement_OnFocused2" Unfocused="VisualElement_OnUnfocused2"/>                                                                                   
+                </Frame>
+
+                <Frame CornerRadius="5" BorderColor="Gray" BackgroundColor="White" x:Name="frame4" Padding="0" WidthRequest="80" HeightRequest="50" HasShadow="True">
+                    <Entry Keyboard="Numeric" FontSize="28" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MaxLength="1"
+                           HorizontalTextAlignment="Center" Focused="VisualElement_OnFocused3" Unfocused="VisualElement_OnUnfocused3"/>
+                </Frame>
+
+            </StackLayout>
+
+            <Button CornerRadius="10" BackgroundColor="ForestGreen" TextColor="White" Text="تایید" HorizontalOptions="Center"
+                    WidthRequest="350" HeightRequest="40" Margin="0,10,0,10" VerticalOptions="EndAndExpand" x:Name="Button0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
